@@ -1,0 +1,34 @@
+/**
+ * Views
+ ============================================================================ */
+
+// View wrapper.
+.views-element-container {}
+
+.view {}
+.view-content {}
+.views-row {}
+
+
+// Grid view overrides.
+.views-view-grid  {
+  .views-col {
+    @include output-rhythm(padding-#{$flow-to}, $large);
+    @include output-rhythm(margin-bottom, $large);
+
+    box-sizing: border-box;
+
+    &:last-child {
+      padding-#{$flow-to}: 0;
+    }
+  }
+}
+
+
+// Some core views, not exhaustive.
+.view-frontpage {}
+.view-taxonomy-term {}
+
+
+
+

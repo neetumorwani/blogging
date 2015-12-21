@@ -1,0 +1,23 @@
+/*
+  This file
+*/
+.pr-header__header-first {
+    background-image: url('/themes/blogging/images/dancing-girl.png');
+    width: 100%;
+    height: auto;
+    float: right;
+
+}
+.site-branding__name a {*/
+    font-style: oblique;
+    font-size: 3em;
+    font-weight: bold;
+    font-stretch: extra-expanded;
+}
+
+.site-branding__slogan {
+    font-size: x-large;
+    font-style: normal;
+    color: #212121;
+    font-family: cursive;
+}
