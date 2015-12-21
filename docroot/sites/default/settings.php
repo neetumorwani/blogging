@@ -712,15 +712,8 @@ $settings['container_yamls'][] = __DIR__ . '/services.yml';
 # if (file_exists(__DIR__ . '/settings.local.php')) {
 #   include __DIR__ . '/settings.local.php';
 # }
-$databases['default']['default'] = array (
-  'database' => 'blogging8',
-  'username' => 'root',
-  'password' => 'root',
-  'prefix' => '',
-  'host' => 'localhost',
-  'port' => '3306',
-  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
-  'driver' => 'mysql',
-);
+if (file_exists('/var/www/site-php')) {
+  require('/var/www/site-php/eeneetumorwani/eeneetumorwani-settings.inc');
+}
 $settings['install_profile'] = 'standard';
 $config_directories['sync'] = 'sites/default/files/config_jQpEUOON0Z5uvleVH0wydifARbvZ7ZVxYqy4ffsY9c_qiVPX50zpdmupzVDqLuf-p8eEgl8z9Q/sync';
